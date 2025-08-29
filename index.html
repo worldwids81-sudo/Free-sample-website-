@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radhe Enterprises</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- ================= HEADER ================= -->
+  <header class="fixed top-0 left-0 w-full bg-white/70 backdrop-blur-lg shadow z-50">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <div class="text-2xl font-bold text-[#0F2940]">Radhe Enterprises</div>
+      
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-8 font-medium">
+        <li><a href="#home" class="hover:text-[#2A90E0] transition">Home</a></li>
+        <li><a href="#services" class="hover:text-[#2A90E0] transition">Services</a></li>
+        <li><a href="#location" class="hover:text-[#2A90E0] transition">Location</a></li>
+        <li><a href="#contact" class="hover:text-[#2A90E0] transition">Contact</a></li>
+      </ul>
+      <button id="openModalBtn" class="hidden md:block bg-[#2A90E0] text-white px-4 py-2 rounded-lg shadow hover:bg-[#1c6fb3] transition">
+        Book Now
+      </button>
+
+      <!-- Mobile Menu Icon -->
+      <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+    </nav>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white shadow px-6 py-4">
+      <a href="#home" class="block py-2">Home</a>
+      <a href="#services" class="block py-2">Services</a>
+      <a href="#location" class="block py-2">Location</a>
+      <a href="#contact" class="block py-2">Contact</a>
+      <button id="openModalBtnMobile" class="w-full mt-2 bg-[#2A90E0] text-white px-4 py-2 rounded-lg shadow hover:bg-[#1c6fb3] transition">
+        Book Now
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="home" class="pt-28 md:pt-32 bg-gradient-to-r from-gray-50 to-blue-50">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6 py-16">
+      <!-- Text -->
+      <div class="space-y-6 animate-fadeIn">
+        <h1 class="text-4xl md:text-5xl font-bold text-[#0F2940]">Expert Water Purifier Repair & Service at Your Doorstep</h1>
+        <p class="text-lg text-gray-600">We provide reliable, fast, and professional water purifier solutions to keep your family safe and healthy.</p>
+        
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="tel:9527228897" class="bg-[#2A90E0] text-white px-6 py-3 rounded-lg shadow hover:bg-[#1c6fb3] transition">📞 Call Us: 9527228897</a>
+          <button id="openModalBtn2" class="bg-green-500 text-white px-6 py-3 rounded-lg shadow hover:bg-green-600 transition">
+            💬 Book on WhatsApp
+          </button>
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="animate-fadeIn delay-200">
+        <img src="https://source.unsplash.com/600x400/?plumber,water" alt="Service" class="rounded-2xl shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center text-[#0F2940] mb-12">Our Services</h2>
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <!-- Service Card -->
+      <div class="service-card">
+        <div class="text-4xl mb-4">🔧</div>
+        <h3 class="text-xl font-semibold mb-2">General Repair & Service</h3>
+        <p class="text-gray-600">Quick and reliable repair solutions for all purifier models.</p>
+      </div>
+      <div class="service-card">
+        <div class="text-4xl mb-4">⚙️</div>
+        <h3 class="text-xl font-semibold mb-2">New Installation</h3>
+        <p class="text-gray-600">Professional installation ensuring perfect setup and safety.</p>
+      </div>
+      <div class="service-card">
+        <div class="text-4xl mb-4">🛡️</div>
+        <h3 class="text-xl font-semibold mb-2">Annual Maintenance (AMC)</h3>
+        <p class="text-gray-600">Regular maintenance packages for long-lasting performance.</p>
+      </div>
+      <div class="service-card">
+        <div class="text-4xl mb-4">💧</div>
+        <h3 class="text-xl font-semibold mb-2">Filter Replacement</h3>
+        <p class="text-gray-600">High-quality filter replacements to ensure pure drinking water.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LOCATION ================= -->
+  <section id="location" class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-6 items-center">
+      <!-- Map -->
+      <div>
+        <iframe class="w-full h-80 rounded-lg shadow"
+          src="https://www.google.com/maps/embed?pb=!1m18!..." allowfullscreen loading="lazy"></iframe>
+      </div>
+
+      <!-- Info -->
+      <div class="space-y-6">
+        <h2 class="text-3xl font-bold text-[#0F2940]">Visit Us</h2>
+        <p><strong>Address:</strong> Your Full Business Address</p>
+        <p><strong>Hours:</strong><br>
+          Mon-Sat: 9AM - 8PM<br>
+          Sun: 10AM - 6PM
+        </p>
+        <a href="https://maps.google.com" target="_blank" class="bg-[#2A90E0] text-white px-6 py-3 rounded-lg shadow hover:bg-[#1c6fb3] transition">📍 Get Directions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="max-w-7xl mx-auto px-6 py-16 text-center">
+    <h2 class="text-3xl font-bold text-[#0F2940] mb-6">Contact Us</h2>
+    <p>📞 Phone: 9527228897</p>
+    <p>💬 WhatsApp: Your WhatsApp Number</p>
+    <p>📍 Address: Your Full Business Address</p>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-[#0F2940] text-white text-center py-6">
+    <p>© 2025 Radhe Enterprises. All rights reserved.</p>
+  </footer>
+
+  <!-- ================= BOOKING MODAL ================= -->
+  <div id="bookingModal" class="fixed inset-0 hidden bg-black/50 flex items-center justify-center z-50">
+    <div class="bg-white rounded-lg shadow-lg w-11/12 max-w-lg p-6">
+      <h3 class="text-2xl font-bold mb-4">Book a Service</h3>
+      <form id="bookingForm" class="space-y-4">
+        <input type="text" id="name" required placeholder="Your Name" class="w-full border p-2 rounded">
+        <input type="tel" id="phone" required placeholder="Phone Number" class="w-full border p-2 rounded">
+        
+        <select id="service" required class="w-full border p-2 rounded">
+          <option value="">Select Service</option>
+          <option>General Repair & Service</option>
+          <option>New Installation</option>
+          <option>Annual Maintenance Contract (AMC)</option>
+          <option>Filter Replacement</option>
+          <option>Other</option>
+        </select>
+        <input type="text" id="customService" placeholder="Other Service Description" class="w-full border p-2 rounded hidden">
+        
+        <input type="text" id="address" placeholder="Your Address (Optional)" class="w-full border p-2 rounded">
+
+        <div class="flex justify-end gap-4">
+          <button type="button" id="closeModalBtn" class="px-4 py-2 border rounded hover:bg-gray-100">Cancel</button>
+          <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
